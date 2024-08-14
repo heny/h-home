@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>花森小窝</title>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta name="Author" contect="花森酱" />
+    <meta name="Robots" contect="all" />
+    <meta name="keywords" content="花森主页,花森笔录,花森酱主页,花森酱笔录" />
+    <meta
+      name="description"
+      content="花森酱门户由可自定义简洁主页、技术文章分享、拖拽低代码编辑器、协同流程图模块组成，涵盖了日常生活、娱乐、学习、影视、考研、工作、科技、实用工具等领域，致力于提供高效上网冲浪环境的公益性平台！"
+    />
+    <link rel="icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/font/iconfont.css" />
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal-content">
+      </div>
+    </div>
+    <div class="container">
+      <!-- 主体开始 -->
+      <div class="hander">
+        <!-- 导航开始 -->
+        <nav id="nav-menu" role="dis-select">
+          <a href="#home" data-rel="home-me-section" class="active">首页</a>
+          <a href="#about" data-rel="about-exp-section">关于</a>
+          <a href="#experience" data-rel="course-exp-section">历程</a>
+          <a href="#site" data-rel="website-exp-section">站点</a>
+        </nav>
+      </div>
+      <!-- 导航结束 -->
+      <div class="content">
+        <!-- 内容开始 -->
+        <section class="home-me-section active-section">
+          <!-- 首页开始 -->
+          <div class="main" role="dis-select">
+            <!-- 首页内容 -->
+            <img src="./assets/img/banner.jpg" class="banner" />
+            <img src="./assets/img/logo.jpg" class="logo" />
+            <div
+              class="name"
+              onclick="javascript:this.innerHTML=(this.innerHTML == '空空' ? 'Heny' : '空空');"
+            >
+              Heny
+            </div>
+            <div class="motto">念念不忘 · 必有回响</div>
+            <div class="connection">
+              <!-- 联系我 -->
+              <ul id="connection-box"></ul>
+            </div>
+          </div>
+          <!-- 首页内容结束 -->
+        </section>
+        <!-- 首页结束 -->
+        <section class="about-exp-section">
+          <!-- 关于开始 -->
+          <div class="main">
+            <!-- 关于内容 -->
+            <img src="./assets/img/banner_about.jpg" class="banner_small"  role="dis-select" />
+            <img src="./assets/img/logo.jpg" class="logo_small" />
+            <div class="about">
+              <p>"愿我微弱的光能照亮后来者的路"</p>
+            </div>
+            <div class="about" style="margin-top: 20px">
+              <p>
+                网站是致力于营造高效简洁的上网冲浪环境的公益性平台，本站严格遵守中华人民共和国相关法律。一切资源均来源于免费论坛社区，仅供大家学习交流，请勿用于商业用途！
+              </p>
+            </div>
+          </div>
+          <!-- 关于内容结束 -->
+        </section>
+        <!-- 关于结束 -->
+        <section class="course-exp-section">
+          <!-- 历程开始 -->
+          <div class="main">
+            <!-- 历程内容 -->
+            <img src="./assets/img/banner_about.jpg" class="banner_small" role="dis-select" />
+            <img src="./assets/img/logo.jpg" class="logo_small" />
+            <div class="box">
+              <div id="boxs">
+                <div class="track-list">
+                  <!-- 时间轴开始 -->
+                  <ul id="timeline"></ul>
+                </div>
+                <!-- 时间轴结束 -->
+              </div>
+            </div>
+            <div style="color: #aaa; text-align: center; font-size: 12px">
+              注: 上下滑动查看历史进程
+            </div>
+          </div>
+          <!-- 历程内容结束 -->
+        </section>
+        <!-- 历程结束 -->
+        <section class="website-exp-section">
+          <!-- 站点开始 -->
+          <div class="main">
+            <!-- 站点内容开始 -->
+            <img src="./assets/img/banner_about.jpg" class="banner_small" role="dis-select" />
+            <img src="./assets/img/logo.jpg" class="logo_small" />
+            <!-- 站点一 -->
+            <a href="https://hrhe.cn" target="_blank">
+              <div class="web">简洁主页</div>
+            </a>
+            <!-- 站点二 -->
+            <a href="https://note.hrhe.cn" target="_blank">
+              <div class="web">学习日志</div>
+            </a>
+            <!-- 站点三 -->
+            <a href="https://note.hrhe.cn" target="_blank">
+              <div class="web">学习日志</div>
+            </a>
+            <div class="tips">所有站点安全稳定运行</div>
+          </div>
+          <!-- 站点内容结束 -->
+        </section>
+        <!-- 站点结束 -->
+      </div>
+      <!-- 内容结束 -->
+    </div>
+    <!-- 主体结束 -->
+    <img
+      src="./assets/img/china_guoqi.svg"
+      style="width: 60px; right: 0px; position: fixed; top: 0px"
+    />
+    <!-- 右上角国旗 -->
+    <div class="footer">
+      <!-- 备案信息 -->
+      <a target="_blank" href="https://beian.miit.gov.cn/">京ICP备2022004926号-1</a>
+      <br />
+      <!-- 底部版权 -->
+      <span id="sitetime"></span>
+      <!-- 运行时间 -->
+      <br />
+      Copyright Heny All Right Reserved
+    </div>
+    <!-- 版权结束 -->
+    <!-- 核心插件 -->
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/render.js"></script>
+    <!-- 图标库 -->
+    <!-- <script src="./assets/js/font.js"></script> -->
+    <!-- 运行时间 -->
+    <!-- 点击烟花特效 -->
+    <script src="./assets/js/mouse.js"></script>
+  </body>
+</html>
