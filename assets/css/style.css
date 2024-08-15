@@ -19,10 +19,10 @@ a {
 ul li {
   list-style: none;
 }
-nav a {
+nav span {
   margin-left: 32px;
 }
-nav a.active {
+nav span.active {
   color: #71b3dd;
 }
 body {

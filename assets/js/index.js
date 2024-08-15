@@ -1,4 +1,4 @@
-const navMenuItems = document.querySelectorAll('#nav-menu a');
+const navMenuItems = document.querySelectorAll('#nav-menu span');
  
 // 设置指示器的点击切换
 function handleMenuItemClick(target){
